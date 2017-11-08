@@ -45,7 +45,9 @@ class TestGame < MiniTest::Test
     assert_equal("***e**e***", @game.display(@hiddenword, 'e'))
   end
 
-
+  def test_won_or_lost
+    assert_equal('Game Won', @game.won_or_lost(@player))
+  end
 
 
 

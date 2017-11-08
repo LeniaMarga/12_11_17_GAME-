@@ -22,6 +22,19 @@ class Game
   end
 
 
+  def won_or_lost
+    if (!game_word_array.include?('*')) && (player.number_of_lives > 0)
+      p "Game Won!"
+    elsif (game_word_array.include?('*')) && (player.number_of_lives = 0)
+      p "Game Over!"
+    else
+      p "Go on..."
+    end
+  end
+
+
+
+
 
 
 
